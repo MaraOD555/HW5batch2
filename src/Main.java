@@ -52,6 +52,11 @@ public class Main {
     //char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
     //В результате в консоль должно быть выведено "Ivanov Ivan". Дополнительные массивы не используются.
 
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+
     } public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
