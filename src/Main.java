@@ -1,4 +1,5 @@
 
+import java.sql.SQLOutput;
 import
 java.text.DecimalFormat;
 
@@ -21,10 +22,18 @@ public class Main {
     //Вывести в консоль результат в формате: «Минимальная сумма трат за день составила … рублей.
     // Максимальная сумма трат за день составила … рублей».
 
-        int maxNum = 0;
-        int minNum = 0;
-        for (int )
-
+        int maxNum = arr [0];
+        int minNum = arr [0];
+       for (int i = 0; i < arr.length; i++) {
+           if (arr [i] < minNum) {
+               minNum = arr [i];
+           }
+           if (arr [i] > maxNum) {
+               maxNum = arr [i];
+           }
+       }
+        System.out.println("Минимальная сумма затрат за день составила " + minNum + " рублей. " +
+                "\nМаксимальная сумма затрат за день составила " + maxNum + " рублей.");
 
 
     //Задача 3
